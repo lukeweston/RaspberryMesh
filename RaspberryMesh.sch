@@ -19119,7 +19119,7 @@ grid 2.5 mm, outline 2.4 x 4.4 mm</description>
 <text x="25.4" y="203.2" size="2.1844" layer="97">Released under the CERN Open Hardware License:</text>
 <text x="45.72" y="198.12" size="2.1844" layer="97">http://ohwr.org/cernohl</text>
 <wire x1="215.9" y1="264.16" x2="215.9" y2="220.98" width="0.1524" layer="98" style="shortdash"/>
-<text x="25.4" y="154.94" size="1.778" layer="97" ratio="16">ISP programmer must only supply 3.3V power and logic.</text>
+<text x="25.4" y="154.94" size="1.778" layer="97">ISP programmer must only supply 3.3V power and logic.</text>
 <wire x1="241.3" y1="30.48" x2="17.78" y2="30.48" width="0.1524" layer="98" style="shortdash"/>
 <wire x1="17.78" y1="167.64" x2="17.78" y2="30.48" width="0.1524" layer="98" style="shortdash"/>
 <wire x1="241.3" y1="167.64" x2="17.78" y2="167.64" width="0.1524" layer="98" style="shortdash"/>
@@ -19500,10 +19500,10 @@ grid 2.5 mm, outline 2.4 x 4.4 mm</description>
 </instance>
 <instance part="U$42" gate="G$1" x="238.76" y="281.94"/>
 <instance part="U$43" gate="G$1" x="198.12" y="281.94"/>
-<instance part="LED3" gate="G$1" x="205.74" y="289.56" smashed="yes" rot="R90">
-<attribute name="NAME" x="203.2" y="284.48" size="1.016" layer="95"/>
-<attribute name="VALUE" x="203.2" y="281.94" size="1.016" layer="96"/>
-<attribute name="PACKAGE" x="203.2" y="279.4" size="1.016" layer="96"/>
+<instance part="LED3" gate="G$1" x="208.28" y="289.56" smashed="yes" rot="MR90">
+<attribute name="NAME" x="200.66" y="284.48" size="1.016" layer="95"/>
+<attribute name="VALUE" x="205.74" y="284.48" size="1.016" layer="96"/>
+<attribute name="PACKAGE" x="205.74" y="281.94" size="1.016" layer="96"/>
 </instance>
 <instance part="LED2" gate="G$1" x="238.76" y="304.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="231.14" y="307.34" size="1.016" layer="95"/>
@@ -19833,13 +19833,13 @@ grid 2.5 mm, outline 2.4 x 4.4 mm</description>
 </segment>
 <segment>
 <pinref part="U$43" gate="G$1" pin="GND"/>
-<wire x1="198.12" y1="284.48" x2="198.12" y2="289.56" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="289.56" x2="203.2" y2="289.56" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="GND"/>
 <wire x1="200.66" y1="297.18" x2="198.12" y2="297.18" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="297.18" x2="198.12" y2="289.56" width="0.1524" layer="91"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<wire x1="198.12" y1="289.56" x2="198.12" y2="284.48" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="289.56" x2="198.12" y2="289.56" width="0.1524" layer="91"/>
 <junction x="198.12" y="289.56"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -20747,13 +20747,6 @@ grid 2.5 mm, outline 2.4 x 4.4 mm</description>
 <pinref part="LED2" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="210.82" y1="289.56" x2="213.36" y2="289.56" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
-</segment>
-</net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="VBATT"/>
@@ -20796,6 +20789,13 @@ grid 2.5 mm, outline 2.4 x 4.4 mm</description>
 <pinref part="J9" gate="G$1" pin="1"/>
 <wire x1="231.14" y1="144.78" x2="215.9" y2="144.78" width="0.1524" layer="91"/>
 <label x="218.44" y="145.034" size="1.016" layer="95"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="289.56" x2="213.36" y2="289.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
