@@ -1,5 +1,5 @@
 
-**Raspberry Pi sensor / power supply / LCD / 802.15.4 mesh network expansion board**
+**Raspberry Pi sensor / power supply / LCD / 802.15.4 mesh network expansion board**   
 Luke Weston, 2012     
 
 Released as Open Hardware under the CERN Open Hardware License - http://ohwr.org/cernohl  
